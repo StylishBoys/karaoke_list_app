@@ -1,33 +1,41 @@
 import 'package:flutter/material.dart';
+import 'package:karaoke_lost_app/view/home_view';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'カラオケのオトモ',
       theme: ThemeData(
-
-        primarySwatch: Colors.red,
-
+        primarySwatch: Colors.orange,
       ),
-      home: MyHomePage(),
+      home: MainPage(),
     );
   }
 }
-
-class MyHomePage extends StatelessWidget {
+//最初に表示する画面
+class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      appBar: AppBar(title:const Text("カラオケのオトモ")),
+      body: Container(
+        child: Column(
+          children: [
+            Container(),
+            Container(),
+            Container(),
+          ],
+        ),
+      ),
     );
   }
 }
+
