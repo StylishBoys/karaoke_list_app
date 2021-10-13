@@ -1,4 +1,4 @@
-# karaoke_lost_app
+# karaoke_list_app
 
 A new Flutter project.
 
