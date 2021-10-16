@@ -63,7 +63,7 @@ class FirstPage extends StatelessWidget {
         children: <Widget>[
           Container(
             margin: EdgeInsets.only(top: 20, left: 20),
-            child: Text("next music is ...",
+            child: Text("the next music is ...",
               style: TextStyle(fontSize: 30, color: Colors.blue),
             ),
           ),
